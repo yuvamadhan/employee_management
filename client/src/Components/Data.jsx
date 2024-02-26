@@ -11,7 +11,7 @@ const Data = () => {
     useEffect(()=>{
         const fetchEmps=async()=>{
             try {
-                const res=await axios.get("http://localhost:4000/getdata");
+                const res=await axios.get("https://employee-management-ehw7.onrender.com/getdata");
                 console.log(res.data)
                 setEmp(res.data);
                 

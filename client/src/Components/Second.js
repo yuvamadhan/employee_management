@@ -22,7 +22,7 @@ function Second(props) {
 
     try {
       console.log(dataToSend)
-      const response = await axios.post('http://localhost:4000/postData', dataToSend)
+      const response = await axios.post('https://employee-management-ehw7.onrender.com/postData', dataToSend)
       if(response.data==="0") alert("Invalid Salary")
       else{
     alert("Added")
